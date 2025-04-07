@@ -16,3 +16,17 @@ Feature: Target search test cases
     |tea          |tea            |
     |iphone       |iphone         |
     |dress        |dress          |
+
+Feature: Verify target Circle benefits
+
+  Scenario: Check number of benefit cells
+    Given Open the Target Circle page
+    When Count the benefit cells
+    Then There should be 10 benefit cells
+
+
+  Scenario: Add a product to the shopping cart
+    Given Open the Target website
+    When Search for a product
+    And Add the product to the cart
+    Then The cart should contain the product

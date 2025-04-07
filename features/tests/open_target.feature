@@ -5,3 +5,6 @@ Feature: # Target cart icon test case
     Given Open target main page
     When Search for target cart icon
     Then Verify cart is empty
+
+
+
